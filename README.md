@@ -1,7 +1,14 @@
-# Archie - Hugo theme
-Archie is a minimal and clean theme for hugo with a markdown-ish UI.
+# Archie - Hugo theme (Customized)
 
-Forked from [Ezhil Theme](https://github.com/vividvilla/ezhil)
+> **Forked from [Archie Theme](https://github.com/athul/archie)** - A minimal and clean theme for Hugo with a markdown-ish UI.
+
+This is a customized version of the original Archie theme with:
+- Custom intro section with profile photo
+- Sunset-inspired color scheme
+- Dark mode toggle alignment fixes
+- Additional CSS customizations
+
+Original theme by [@athul](https://github.com/athul/archie), which was forked from [Ezhil Theme](https://github.com/vividvilla/ezhil)
 
 ## Demo
 
