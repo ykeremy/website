@@ -11,6 +11,24 @@
 					<p>{{ .Site.Params.Subtitle | .Page.RenderString }}</p>
 					{{- end -}}
 				</div>
+				
+				{{- if .Site.Params.showIntro -}}
+				<section class="intro-section">
+					{{- if .Site.Params.introPhoto -}}
+					<div class="intro-photo">
+						<img src="{{ .Site.Params.introPhoto }}" alt="Profile photo" />
+					</div>
+					{{- end -}}
+					<div class="intro-content">
+						{{- if .Site.Params.introTitle -}}
+						<h2 class="intro-title">{{ .Site.Params.introTitle | .Page.RenderString }}</h2>
+						{{- end -}}
+						{{- if .Site.Params.introText -}}
+						<p class="intro-text">{{ .Site.Params.introText | .Page.RenderString }}</p>
+						{{- end -}}
+					</div>
+				</section>
+				{{- end -}}
 				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
 				{{ range $paginator.Pages }}

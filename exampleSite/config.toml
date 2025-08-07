@@ -10,6 +10,15 @@ pygmentscodefencesguesssyntax = true
 	mode="auto"
 	useCDN=false
 	subtitle = "Minimal and Clean [blog theme for Hugo](https://github.com/athul/archie)"
+	
+	# Custom CSS
+	customcss = ["css/intro.css"]
+	
+	# Intro section
+	showIntro = true
+	introPhoto = "/profile.jpg"
+	introTitle = "Hi, I'm [Your Name]"
+	introText = "Welcome to my personal website. I'm a [your role/profession] passionate about [your interests]. Here you'll find my thoughts, projects, and experiences."
 
 [[params.social]]
 name = "GitHub"
